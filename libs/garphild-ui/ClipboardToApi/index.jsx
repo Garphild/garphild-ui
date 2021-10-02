@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 class ClipboardSendImage extends Component {
+  constructor() {
+    super();
+    this.getClipboardFiles = this.getClipboardFiles.bind(this);
+    this.sendImageToBackend = this.sendImageToBackend.bind(this);
+  }
+
+
   componentDidMount() {
     window.addEventListener("paste", this.getClipboardFiles );
   }
