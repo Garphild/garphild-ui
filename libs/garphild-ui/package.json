@@ -4,6 +4,10 @@
   "license": "MIT",
   "author": "Serhii Kondrashov <garphild@garphild.pro>",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Garphild/garphild-ui"
+  },
   "keywords": [
     "react",
     "javascript",
