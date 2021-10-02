@@ -61,7 +61,7 @@ class ClipboardSendImage extends Component {
 
   render() {
     const { children } = this.props;
-    return <>{children}</>;
+    return <React.Fragment>{children}</React.Fragment>;
   }
 }
 
