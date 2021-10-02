@@ -11,7 +11,8 @@ class ClipboardSendImage extends Component {
   }
 
   getClipboardFiles = (event) => {
-    const { apiUrl, onFileFound } = this.props;
+    const { apiUrl, onFileFound, enabled } = this.props;
+    if (!enabled) return null;
     const { items } = event.clipboardData;
     for (const index in items) {
       const item = items[index];
@@ -61,6 +62,7 @@ ClipboardSendImage.defaultProps = {
   onUploadSuccess: null,
   onUploadFail: null,
   onFileFound: null,
+  enabled: false,
 }
 ClipboardSendImage.propTypes = {
   apiUrl: PropTypes.string.isRequired,
@@ -68,6 +70,7 @@ ClipboardSendImage.propTypes = {
   onUploadFail: PropTypes.func,
   onFileFound: PropTypes.func,
   children: PropTypes.any,
+  enabled: PropTypes.bool,
 };
 
 export default ClipboardSendImage;
