@@ -1,6 +1,10 @@
 {
   "version": 2,
-  "projects": {},
+  "projects": {
+    "garphild-ui": {
+      "root": "libs/garphild-ui"
+    }
+  },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
   }

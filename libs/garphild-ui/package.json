@@ -1,0 +1,21 @@
+{
+  "name": "@garphild/garphild-ui",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Serhii Kondrashov <garphild@garphild.pro>",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "javascript",
+    "component",
+    "clipboard",
+    "image",
+    "api"
+  ],
+  "peerDependencies": {
+    "prop-types": "*",
+    "react": "*"
+  },
+  "scripts": {
+  }
+}
