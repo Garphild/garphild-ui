@@ -10,7 +10,7 @@ class ClipboardSendImage extends Component {
     window.removeEventListener("paste", this.getClipboardFiles );
   }
 
-  getClipboardFiles = (event) => {
+  getClipboardFiles(event) {
     const { apiUrl, onFileFound, enabled } = this.props;
     if (!enabled) return null;
     const { items } = event.clipboardData;
